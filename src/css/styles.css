@@ -14,3 +14,26 @@
 @import url('./header.css');
 @import url('./badges.css');
 @import url('./back-link.css');
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 1128px;
+}
+
+.gallery-item {
+  list-style-type: none;
+}
+.gallery-link {
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(104%);
+}
