@@ -4,7 +4,6 @@ const formData = {
 };
 
 const form = document.querySelector('.feedback-form');
-console.log(form);
 
 form.addEventListener('submit', handleSubmit);
 
@@ -26,7 +25,7 @@ function restoreFromData() {
   try {
     parsedData = JSON.parse(savedData);
   } catch (error) {
-    console.error('error', error);
+    return;
   }
 
   if (parsedData) {
@@ -51,5 +50,3 @@ function handleSubmit(event) {
 }
 
 document.addEventListener('DOMContentLoaded', restoreFromData);
-
-console.log(formData);
